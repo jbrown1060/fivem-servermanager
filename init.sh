@@ -48,10 +48,10 @@ fi
 	cd ..
 	mkdir servers
 	mkdir managerfiles
-	wget https://raw.githubusercontent.com/Slluxx/fivem-servermanager/master/manager.sh
+	wget https://raw.githubusercontent.com/jbrown1060/fivem-servermanager/master/manager.sh
 	cd ./managerfiles
-	wget https://raw.githubusercontent.com/Slluxx/fivem-servermanager/master/managerfiles/default-config.cfg
-	wget https://raw.githubusercontent.com/Slluxx/fivem-servermanager/master/managerfiles/used-ports.txt
+	wget https://raw.githubusercontent.com/jbrown1060/fivem-servermanager/master/managerfiles/default-config.cfg
+	wget https://raw.githubusercontent.com/jbrown1060/fivem-servermanager/master/managerfiles/used-ports.txt
 	cd ..
 	chmod -R 777 $installlocation
 	
