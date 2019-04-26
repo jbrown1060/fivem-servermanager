@@ -1,4 +1,4 @@
-# Servermanager
+# ServerManager
 
 This will help you set up multiple FX Server for fivem.
 
