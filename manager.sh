@@ -20,12 +20,12 @@ fi
 
 
 
-OPTION=$(whiptail --title "Slluxx Server manager" --menu "Choose your option" 15 60 5 \
+OPTION=$(whiptail --title "Joshuas Server Manager" --menu "Choose your option" 15 60 5 \
 "1" "Manage existing servers" \
 "2" "Add server" \
 "3" "Delete server" \
 "4" "Update FXdata" \
-"5" "Update manager" 3>&1 1>&2 2>&3)
+"5" "Update Manager" 3>&1 1>&2 2>&3)
 
 case "$OPTION" in
         1)
@@ -231,7 +231,7 @@ managerurl="https://raw.githubusercontent.com/jbrown1060/fivem-servermanager/mas
 configurl="https://raw.githubusercontent.com/jbrown1060/fivem-servermanager/master/managerfiles/default-config.cfg"
 
 rm ./manager.sh
-wget $managerurl
+wget --no-cache $managerurl
 chmod +x ./manager.sh
 
 cd ./managerfiles
