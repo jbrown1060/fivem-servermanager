@@ -208,7 +208,7 @@ newestfxdata="$(curl $masterfolder | grep '<a href' | grep -v 'revoked' | head -
 rm -R ./fxdata
 mkdir fxdata
 cd fxdata
-wget ${masterfolder}${newestfxdata}fx.tar.xz 
+wget ${masterfolder}${newestfxdata} 
 tar xf fx.tar.xz
 rm ./fx.tar.xz
 cd ..
