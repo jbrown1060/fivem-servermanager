@@ -60,3 +60,4 @@ clear
 echo "Installation process is over."
 echo "To start the manager, use 'sudo ${installlocation}/manager.sh'."
 echo "Please update the FXdata."
+rm init.sh
