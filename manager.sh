@@ -202,14 +202,13 @@ done
 
 
 masterfolder="https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/"
-masterfolder1="https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/1"
-newestfxdata="$(curl $masterfolder | grep '<a href' | grep -v 'revoked' | head -2 | tail -1 | grep -Po '(?<=href="1)[^"]*')"
+newestfxdata="$(curl $masterfolder | grep '<a href' | grep -v 'revoked' | head -2 | tail -1 | grep -Po '(?<=href=")[^"]*')"
 # filter valid urls and take last one.
 
 rm -R ./fxdata
 mkdir fxdata
 cd fxdata
-wget ${masterfolder1}${newestfxdata}fx.tar.xz 
+wget ${masterfolder}${newestfxdata}fx.tar.xz 
 tar xf fx.tar.xz
 rm ./fx.tar.xz
 cd ..
